@@ -12,11 +12,50 @@ namespace RosePlotMac
 	[Register ("ViewController")]
 	partial class ViewController
 	{
-		[Action ("ButtonPressed:")]
-		partial void ButtonPressed (Foundation.NSObject sender);
+		[Outlet]
+		AppKit.NSButton FeaturesCheckbox { get; set; }
+
+		[Outlet]
+		AppKit.NSTextField FilenameTextField { get; set; }
+
+		[Outlet]
+		AppKit.NSButton FishnetCheckbox { get; set; }
+
+		[Outlet]
+		AppKit.NSTextField IntervalTextField { get; set; }
+
+		[Outlet]
+		AppKit.NSButton StatisticsCheckbox { get; set; }
+
+		[Action ("OnSelectButtonClicked:")]
+		partial void OnSelectButtonClicked (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (StatisticsCheckbox != null) {
+				StatisticsCheckbox.Dispose ();
+				StatisticsCheckbox = null;
+			}
+
+			if (FeaturesCheckbox != null) {
+				FeaturesCheckbox.Dispose ();
+				FeaturesCheckbox = null;
+			}
+
+			if (FishnetCheckbox != null) {
+				FishnetCheckbox.Dispose ();
+				FishnetCheckbox = null;
+			}
+
+			if (IntervalTextField != null) {
+				IntervalTextField.Dispose ();
+				IntervalTextField = null;
+			}
+
+			if (FilenameTextField != null) {
+				FilenameTextField.Dispose ();
+				FilenameTextField = null;
+			}
 		}
 	}
 }

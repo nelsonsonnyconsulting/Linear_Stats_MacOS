@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -720,7 +720,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvZ-P3-zNZ">
-                                <rect key="frame" x="87" y="231" width="373" height="21"/>
+                                <rect key="frame" x="87" y="231" width="291" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Thx-dg-8Ma">
                                     <font key="font" metaFont="system"/>
@@ -813,8 +813,28 @@ Gw
 </string>
                                 </buttonCell>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xda-pK-Cvf">
+                                <rect key="frame" x="379" y="225" width="84" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Select..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZZc-gB-4C0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="OnSelectButtonClicked:" target="XfG-lQ-9wD" id="v6J-bc-BDC"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="Blah" destination="xda-pK-Cvf" id="4PH-MB-Urf"/>
+                        <outlet property="FeaturesCheckbox" destination="pAN-VE-uOB" id="ls4-OC-2eJ"/>
+                        <outlet property="FileLocationTextBox" destination="XvZ-P3-zNZ" id="LWy-vK-2en"/>
+                        <outlet property="FilenameTextField" destination="XvZ-P3-zNZ" id="xrS-YK-cVM"/>
+                        <outlet property="FishnetCheckbox" destination="fvE-aO-Z9p" id="xUf-JR-Dhn"/>
+                        <outlet property="IntervalTextField" destination="7kd-61-EpH" id="jgV-3J-qm5"/>
+                        <outlet property="StatisticsCheckbox" destination="BcB-Pg-k5m" id="OZM-iY-AGK"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

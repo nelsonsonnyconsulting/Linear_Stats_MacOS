@@ -1,5 +1,4 @@
 ﻿using System;
-
 using AppKit;
 using Foundation;
 
@@ -28,6 +27,16 @@ namespace RosePlotMac
 				base.RepresentedObject = value;
 				// Update the view, if already loaded.
 			}
+		}
+
+        partial void OnSelectButtonClicked(NSObject sender)
+        {
+			NSSavePanel savePanel = new NSSavePanel();
+			savePanel.Title = "Choose RosePlot File to Save...";
+			savePanel.RunModal();
+			FilenameTextField.StringValue = savePanel.Url.ToString();
+			// Checking if a checkbox is checked
+			// StatisticsCheckbox.State == NSCellStateValue.On;
 		}
     }
 }
