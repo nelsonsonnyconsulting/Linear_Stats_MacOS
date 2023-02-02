@@ -735,6 +735,9 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="OnFishnetCheckboxClicked:" target="XfG-lQ-9wD" id="0Se-1P-7kR"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BcB-Pg-k5m">
                                 <rect key="frame" x="85" y="182" width="115" height="18"/>
@@ -832,7 +835,7 @@ Gw
                         <outlet property="FileLocationTextBox" destination="XvZ-P3-zNZ" id="LWy-vK-2en"/>
                         <outlet property="FilenameTextField" destination="XvZ-P3-zNZ" id="xrS-YK-cVM"/>
                         <outlet property="FishnetCheckbox" destination="fvE-aO-Z9p" id="xUf-JR-Dhn"/>
-                        <outlet property="IntervalTextField" destination="7kd-61-EpH" id="jgV-3J-qm5"/>
+                        <outlet property="IntervalTextField" destination="7kd-61-EpH" id="T3O-do-mlL"/>
                         <outlet property="StatisticsCheckbox" destination="BcB-Pg-k5m" id="OZM-iY-AGK"/>
                     </connections>
                 </viewController>

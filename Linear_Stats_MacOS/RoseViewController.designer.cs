@@ -27,19 +27,22 @@ namespace RosePlotMac
 		[Outlet]
 		AppKit.NSButton StatisticsCheckbox { get; set; }
 
+		[Action ("OnFishnetCheckboxClicked:")]
+		partial void OnFishnetCheckboxClicked (Foundation.NSObject sender);
+
 		[Action ("OnSelectButtonClicked:")]
 		partial void OnSelectButtonClicked (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (StatisticsCheckbox != null) {
-				StatisticsCheckbox.Dispose ();
-				StatisticsCheckbox = null;
-			}
-
 			if (FeaturesCheckbox != null) {
 				FeaturesCheckbox.Dispose ();
 				FeaturesCheckbox = null;
+			}
+
+			if (FilenameTextField != null) {
+				FilenameTextField.Dispose ();
+				FilenameTextField = null;
 			}
 
 			if (FishnetCheckbox != null) {
@@ -52,9 +55,9 @@ namespace RosePlotMac
 				IntervalTextField = null;
 			}
 
-			if (FilenameTextField != null) {
-				FilenameTextField.Dispose ();
-				FilenameTextField = null;
+			if (StatisticsCheckbox != null) {
+				StatisticsCheckbox.Dispose ();
+				StatisticsCheckbox = null;
 			}
 		}
 	}

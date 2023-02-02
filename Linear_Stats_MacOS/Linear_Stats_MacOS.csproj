@@ -73,9 +73,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="RoseViewController.cs" />
+    <Compile Include="RoseViewController.designer.cs">
+      <DependentUpon>RoseViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

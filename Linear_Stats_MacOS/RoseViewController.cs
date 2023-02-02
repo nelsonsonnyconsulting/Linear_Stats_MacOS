@@ -6,7 +6,9 @@ namespace RosePlotMac
 {
 	public partial class ViewController : NSViewController
 	{
-		private int numberOfTimesClicked = 0;
+		private bool SaveFishnet;
+		//private bool SaveStatistics;
+		//private bool SelectedFeatures;
 
 		public ViewController (IntPtr handle) : base (handle)
 		{
@@ -38,5 +40,11 @@ namespace RosePlotMac
 			// Checking if a checkbox is checked
 			// StatisticsCheckbox.State == NSCellStateValue.On;
 		}
+
+        partial void OnFishnetCheckboxClicked(NSObject sender)
+        {
+			SaveFishnet = FishnetCheckbox.State == NSCellStateValue.On;
+			//Console.WriteLine("Fishnet changed to " + SaveFishnet);
+        }
     }
 }
