@@ -711,16 +711,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEQ-Tj-ZAE">
-                                <rect key="frame" x="18" y="234" width="63" height="16"/>
+                                <rect key="frame" x="18" y="234" width="114" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Filename:" id="soC-cS-j6F">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Save Rose Plot to:" id="soC-cS-j6F">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvZ-P3-zNZ">
-                                <rect key="frame" x="87" y="231" width="291" height="21"/>
+                                <rect key="frame" x="134" y="231" width="244" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Thx-dg-8Ma">
                                     <font key="font" metaFont="system"/>
@@ -728,35 +728,8 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvE-aO-Z9p">
-                                <rect key="frame" x="85" y="204" width="104" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Save Fishnet" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="FA1-Pb-xcX">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="OnFishnetCheckboxClicked:" target="XfG-lQ-9wD" id="0Se-1P-7kR"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BcB-Pg-k5m">
-                                <rect key="frame" x="85" y="182" width="115" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Save Statistics" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Uj1-yZ-tZc">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAN-VE-uOB">
-                                <rect key="frame" x="85" y="160" width="136" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Selected Features" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wgN-Rm-1eK">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YqV-sU-cmP">
-                                <rect key="frame" x="18" y="124" width="72" height="16"/>
+                                <rect key="frame" x="18" y="134" width="72" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Interval (°):" id="Gxi-HP-zNb">
                                     <font key="font" usesAppearanceFont="YES"/>
@@ -765,7 +738,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7kd-61-EpH">
-                                <rect key="frame" x="96" y="121" width="364" height="21"/>
+                                <rect key="frame" x="96" y="131" width="364" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="E9P-mi-Wtx">
                                     <font key="font" metaFont="system"/>
@@ -774,7 +747,7 @@
                                 </textFieldCell>
                             </textField>
                             <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2iU-Jy-iJx">
-                                <rect key="frame" x="120" y="91" width="343" height="25"/>
+                                <rect key="frame" x="120" y="101" width="343" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="xnJ-P4-Adt">
                                     <font key="font" metaFont="system"/>
@@ -788,7 +761,7 @@
                                 </comboBoxCell>
                             </comboBox>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vDj-3C-VdG">
-                                <rect key="frame" x="18" y="97" width="96" height="16"/>
+                                <rect key="frame" x="18" y="107" width="96" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Direction Field:" id="Uis-rx-VGI">
                                     <font key="font" usesAppearanceFont="YES"/>
@@ -826,6 +799,39 @@ Gw
                                         <action selector="OnSelectButtonClicked:" target="XfG-lQ-9wD" id="v6J-bc-BDC"/>
                                     </connections>
                                 </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvE-aO-Z9p">
+                                <rect key="frame" x="132" y="206" width="104" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Save Fishnet" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="FA1-Pb-xcX">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="OnFishnetCheckboxClicked:" target="XfG-lQ-9wD" id="0Se-1P-7kR"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BcB-Pg-k5m">
+                                <rect key="frame" x="132" y="184" width="115" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Save Statistics" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Uj1-yZ-tZc">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="OnStatisticsCheckboxClicked:" target="XfG-lQ-9wD" id="bva-3b-u9Q"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAN-VE-uOB">
+                                <rect key="frame" x="132" y="162" width="136" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Selected Features" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wgN-Rm-1eK">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="OnFeaturesCheckboxClicked:" target="XfG-lQ-9wD" id="BEP-pS-LGr"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>

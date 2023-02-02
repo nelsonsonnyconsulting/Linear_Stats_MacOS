@@ -27,11 +27,17 @@ namespace RosePlotMac
 		[Outlet]
 		AppKit.NSButton StatisticsCheckbox { get; set; }
 
+		[Action ("OnFeaturesCheckboxClicked:")]
+		partial void OnFeaturesCheckboxClicked (Foundation.NSObject sender);
+
 		[Action ("OnFishnetCheckboxClicked:")]
 		partial void OnFishnetCheckboxClicked (Foundation.NSObject sender);
 
 		[Action ("OnSelectButtonClicked:")]
 		partial void OnSelectButtonClicked (Foundation.NSObject sender);
+
+		[Action ("OnStatisticsCheckboxClicked:")]
+		partial void OnStatisticsCheckboxClicked (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{

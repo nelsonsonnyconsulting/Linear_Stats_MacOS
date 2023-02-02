@@ -6,9 +6,11 @@ namespace RosePlotMac
 {
 	public partial class ViewController : NSViewController
 	{
+		// Internal model
+		private String RosePlotFileLocation;
 		private bool SaveFishnet;
-		//private bool SaveStatistics;
-		//private bool SelectedFeatures;
+		private bool SaveStatistics;
+		private bool SelectedFeatures;
 
 		public ViewController (IntPtr handle) : base (handle)
 		{
@@ -33,18 +35,30 @@ namespace RosePlotMac
 
         partial void OnSelectButtonClicked(NSObject sender)
         {
+			// Save panel configuation
 			NSSavePanel savePanel = new NSSavePanel();
 			savePanel.Title = "Choose RosePlot File to Save...";
-			savePanel.RunModal();
-			FilenameTextField.StringValue = savePanel.Url.ToString();
-			// Checking if a checkbox is checked
-			// StatisticsCheckbox.State == NSCellStateValue.On;
+
+			// If OK is clicked, update the label
+			if (savePanel.RunModal() == 1)
+			{
+				FilenameTextField.StringValue = savePanel.Url.Path;
+			}
 		}
 
         partial void OnFishnetCheckboxClicked(NSObject sender)
         {
 			SaveFishnet = FishnetCheckbox.State == NSCellStateValue.On;
-			//Console.WriteLine("Fishnet changed to " + SaveFishnet);
+        }
+
+        partial void OnStatisticsCheckboxClicked(NSObject sender)
+        {
+			SaveStatistics = StatisticsCheckbox.State == NSCellStateValue.On;
+        }
+
+        partial void OnFeaturesCheckboxClicked(NSObject sender)
+        {
+			SelectedFeatures = FeaturesCheckbox.State == NSCellStateValue.On;
         }
     }
 }
